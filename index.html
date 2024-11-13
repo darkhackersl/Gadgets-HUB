@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR Gadgets | Online Store</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script src="https://kit.fontawesome.com/4a3b1f73a2.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="js/jQuery3.4.1.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1><img src="img/icon.png" alt="MR Gadgets Logo" class="logo" height="30px"> MR Gadgets</h1>
+        <nav class="scroll-menu">
+            <a href="dashboard.html"><i class="fas fa-home"></i> Home</a>
+            <a href="products.html"><i class="fas fa-shopping-bag"></i> Products</a>
+            <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+            <a href="track-order.html"><i class="fas fa-truck"></i> Track Order</a>
+            <a href="orders.html"><i class="fas fa-truck"></i> Orders</a>
+            <div class="user-section">
+                <div id="userInfo" style="display: none;">
+                    <!-- Removed welcome message and email display -->
+                </div>
+                <a href="login.html" id="loginBtn"><i class="fas fa-user"></i> Login</a>
+                
+
+                <a href="#" id="logoutBtn" style="display: none;"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                <span id="userIcon" style="display: none;">
+                    <a href="dashboard.html">
+                        <i class="fas fa-user-circle" style="font-size: 24px; color: #742d2d;"></i>
+                    </a>
+                </span>
+                </span>
+            </div>
+        </nav>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <h2>❝𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐭𝐨 𝐌𝐑 𝐆𝐚𝐝𝐠𝐞𝐭𝐬!❞</h2>
+        <p>𝐘𝐨𝐮𝐫 𝐨𝐧𝐞-𝐬𝐭𝐨𝐩 𝐬𝐡𝐨𝐩 𝐟𝐨𝐫 𝐭𝐡𝐞 𝐥𝐚𝐭𝐞𝐬𝐭 𝐞𝐥𝐞𝐜𝐭𝐫𝐨𝐧𝐢𝐜 𝐢𝐭𝐞𝐦𝐬. 𝐌𝐑 𝐆𝐚𝐝𝐠𝐞𝐭𝐬™.</p>
+    </div>
+    
+     <!-- FOOTER -->
+    <div id="4"></div>
+    <script>
+        load("footer.html");
+        function load(url)
+        {
+            req = new XMLHttpRequest();
+            req.open("GET", url, false);
+            req.send(null);
+            document.getElementById(4).innerHTML = req.responseText;
+        }
+    </script></script>
+</body>
+</html>
